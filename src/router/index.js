@@ -1,24 +1,51 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import AllUsers from "../views/AllUsers.vue";
+import Register from "../views/Register.vue";
+import Login from "../views/Login.vue";
+import Resource from "../views/Resource.vue";
+import pages from "../views/pages.vue";
+
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    component: Home
+    path: "/AllUsers",
+    name: "AllUsers",
+    component: AllUsers
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path: "/pages",
+    name: "pages",
+    component: pages
+  },
+  {
+    path: "/Register",
+    name: "Register",
+    component: Register
+  },
+  {
+    path: "/Resource",
+    name: "Resource",
+    component: Resource
+  },
+  {
+    path: "/Login",
+    name: "Login",
+    component: Login
+  },
+  {
+    path: "/AllResources",
+    name: "AllResources",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
-  }
+      import("../views/AllResources.vue")
+  },
+  
 ];
 
 const router = new VueRouter({

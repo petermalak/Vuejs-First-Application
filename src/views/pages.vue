@@ -1,11 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-
-      <router-link to="/Register">Register</router-link> | 
-      <router-link to="/Login">Login</router-link>
+        <router-link to="/AllResources">All Resources</router-link> | 
+       <router-link to="/AllUsers">All Users</router-link> | 
+      <router-link to="/Resource">Resource</router-link>
     </div>
-     <router-view /> 
   </div>
 </template>
 
@@ -20,7 +19,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 10px;
 
   a {
     font-weight: bold;
