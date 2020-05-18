@@ -1,4 +1,4 @@
-# fetch
+# Vuejs-First-Application
 
 ## Project setup
 ```
